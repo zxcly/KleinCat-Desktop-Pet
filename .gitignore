@@ -1,0 +1,17 @@
+bin/
+obj/
+.dotnet/
+.vs/
+app/
+publish/
+data/
+*.user
+*.suo
+*.pdb
+*.zip
+*.epub
+ai-settings.json
+settings.json
+error.log
+docs/demo-check.png
+

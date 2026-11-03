@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>克莱恩小猫</AssemblyName>
+    <ApplicationIcon Condition="Exists('assets/cat.ico')">assets/cat.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets/**/*.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="assets/**/*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Speech" Version="10.0.14" />
+  </ItemGroup>
+</Project>
